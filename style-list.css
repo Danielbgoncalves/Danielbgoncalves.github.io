@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wellcome{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+body{
+    background-color: rgba(255, 234, 207, 0.637) ;
+}
+
+.container{
+    width: 80%;
+    height: 500px;
+    margin-left:10%;
+    margin-top: 50px;
+    border-bottom: 20px solid #1fcd3c ;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(47, 160, 252),rgb(230, 238, 251));
+}
+
+.point{
+    font-size: 20px;
+    position: absolute;
+    font-style:oblique;
+    text-decoration:underline;
+}
+
+.reinicie{
+    margin-left: 92%;
+}
+
+button{
+    margin: 0 10px;
+    border-radius: 100rem;
+    border-style:dashed;
+    width:90px;
+    height: 50px;
+    background-color: rgba(255, 234, 207, 0.432);
+    font-family:'Courier New', Courier, monospace;
+}
+
+.tubo{
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    right: 0px;
+    animation: tubo-animation 1.5s infinite linear;
+}
+
+@keyframes tubo-animation {
+
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+    
+}
+
+
+.mario{
+    position: absolute;
+    width: 150px;
+    left: 100px;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 0.8s ease-out ;
+}
+
+@keyframes jump{
+
+    0%{
+        bottom: 0px;
+    }
+    40%{
+        bottom: 150px;
+    }
+    50%{
+        bottom: 160px;
+    }
+    60%{
+        bottom: 150px;
+    }    
+    100%{
+        bottom: 0px;
+    }
+    
+}
+
+.clouds {
+    position: absolute;
+    width: 450px;
+    animation: cloud 15s infinite linear;
+}
+
+@keyframes cloud {
+
+    from{
+        right: -450px;
+    }
+
+    to{
+        right:100%
+    }
+    
+}
